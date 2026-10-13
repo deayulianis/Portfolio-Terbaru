@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Recommendation System | Dea Yuliani Sabrina</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">Dea Yuliani Sabrina</h1>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#home">Back</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Case Study Content -->
+    <main class="container project-detail fade-in">
+      <!-- Header / Hero Section -->
+      <section class="project-hero">
+        <h2>🎥 Movie Recommendation System</h2>
+        <p class="project-subtitle">
+          Collaborative Filtering & Content-Based Filtering Using MovieLens
+          Dataset
+        </p>
+        <div class="hero-image-container">
+          <img
+            src="img/4.png"
+            alt="Movie Recommendation System Preview"
+            class="detail-hero-img"
+          />
+        </div>
+      </section>
+
+      <!-- Overview -->
+      <section class="project-section">
+        <h3>Overview</h3>
+        <p>
+          A machine learning recommendation system built using the MovieLens
+          dataset to help users discover relevant movies based on personal
+          preferences and community rating patterns. The project implements a
+          dual approach utilizing Collaborative Filtering (Matrix Factorization
+          / SVD) and Content-Based Filtering (Cosine Similarity based on movie
+          metadata/genres) to maximize user satisfaction and engagement.
+        </p>
+      </section>
+
+      <!-- Problem Statement & Objective -->
+      <section class="project-section">
+        <h3>🎯 Business Understanding & Objectives</h3>
+        <ul>
+          <li>
+            <strong>Problem Statements:</strong> How to automatically recommend
+            films tailored to individual user preferences, capture preferences
+            based purely on historical ratings, and suggest unwatched yet
+            relevant movies?
+          </li>
+          <li>
+            <strong>Solutions & Goals:</strong> Built an automated
+            personalization model utilizing user rating histories to form genre
+            preferences, deploying both SVD collaborative filtering and
+            metadata-driven content similarity.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Dataset Information -->
+      <section class="project-section">
+        <h3>📁 Dataset Analysis (MovieLens)</h3>
+        <ul>
+          <li>
+            <strong>movies.csv:</strong> 9,742 unique movies across 20 distinct
+            genres (e.g., Action, Drama, Comedy) structured with pipe-separated
+            formats.
+          </li>
+          <li>
+            <strong>ratings.csv:</strong> 100,836 total ratings contributed by
+            610 unique users covering 9,724 rated films.
+          </li>
+          <li>
+            <strong>tags.csv:</strong> 3,683 keyword tags provided by 58 users
+            across 1,572 unique films.
+          </li>
+          <li>
+            <strong>links.csv:</strong> Complete IMDb/TMDb external identifiers
+            linked across all 9,742 movies.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Key Performance Metrics -->
+      <section class="project-section">
+        <h3>📊 Evaluation & Performance Metrics</h3>
+        <table class="metrics-table">
+          <thead>
+            <tr>
+              <th>Approach / Model</th>
+              <th>Evaluation Metrics & Results</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Collaborative Filtering (SVD)</strong></td>
+              <td>RMSE: ~0.8732 | MAE: ~0.671 (Accurate rating estimations)</td>
+            </tr>
+            <tr>
+              <td><strong>Content-Based Filtering</strong></td>
+              <td>Precision@10: 0.0 | Recall@10: 0.0 | NDCG@10: 0.0*</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size: 0.85rem; color: #64748b; margin-top: 8px">
+          <em
+            >*Note: A score of 0.0 indicates potential sparsity issues where
+            users have minimal ratings or highly diverse genre selections,
+            highlighting areas for future interaction scaling.</em
+          >
+        </p>
+      </section>
+
+      <!-- Key Strategic Insights -->
+      <section class="project-section">
+        <h3>💡 Strategic Business Insights</h3>
+        <ul>
+          <li>
+            <strong>Algorithm Synergy:</strong> Collaborative Filtering excels
+            for active community users by leveraging collective rating
+            behaviors, while Content-Based Filtering effectively resolves
+            cold-start scenarios using item metadata.
+          </li>
+          <li>
+            <strong>Retention Impact:</strong> Rigorous evaluation using ranking
+            metrics (Precision@K and NDCG@K) ensures platform recommendations
+            directly target user satisfaction and long-term service retention.
+          </li>
+        </ul>
+      </section>
+
+      <!-- System Architecture & Workflow (1 Baris) -->
+      <section class="project-section">
+        <h3>⚙️ Development Workflow</h3>
+        <div class="workflow-steps">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Data Exploration</h4>
+              <p>MovieLens Movies, Ratings & Tags Analysis</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Collaborative SVD</h4>
+              <p>Matrix Factorization & Error Metrics</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>Content Filtering</h4>
+              <p>Cosine Similarity & Genre Matching</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4>Ranking & Evaluation</h4>
+              <p>Precision, Recall & NDCG@10 Assessment</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack & Skills -->
+      <section class="project-section">
+        <h3>🛠️ Tech Stack & Skills Highlighted</h3>
+
+        <div class="skills-group">
+          <span class="group-title">Recommendation Algorithms:</span>
+          <div class="tags-wrapper">
+            <span class="skill-badge">Collaborative Filtering (SVD)</span>
+            <span class="skill-badge">Content-Based Filtering</span>
+            <span class="skill-badge">Cosine Similarity</span>
+            <span class="skill-badge">Matrix Factorization</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-title">Data Processing & Evaluation:</span>
+          <div class="tags-wrapper">
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">Pandas & NumPy</span>
+            <span class="skill-badge">RMSE & MAE</span>
+            <span class="skill-badge">Precision@K & NDCG@K</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Links Direct Button (GitHub Only) -->
+      <section class="project-section project-links">
+        <h3>🔗 Project Resources</h3>
+        <div class="action-buttons">
+          <a
+            href="https://github.com/deayulianis/Sistem-Rekomendasi-Movie"
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >💻 View GitHub Repository & Notebook →</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Dea Yuliani Sabrina | Built with 💙</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

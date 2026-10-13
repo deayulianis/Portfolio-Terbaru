@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TikTok Review Sentiment Analysis | Dea Yuliani Sabrina</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">Dea Yuliani Sabrina</h1>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#home">Back</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Case Study Content -->
+    <main class="container project-detail fade-in">
+      <!-- Header / Hero Section -->
+      <section class="project-hero">
+        <h2>💬 TikTok Review Sentiment Analysis</h2>
+        <p class="project-subtitle">
+          Indonesian Natural Language Processing & Lexicon-Based Sentiment
+          Classification
+        </p>
+        <div class="hero-image-container">
+          <img
+            src="img/p7.png"
+            alt="TikTok Review Sentiment Analysis Preview"
+            class="detail-hero-img"
+          />
+        </div>
+      </section>
+
+      <!-- Overview -->
+      <section class="project-section">
+        <h3>Overview</h3>
+        <p>
+          An end-to-end Natural Language Processing (NLP) project analyzing
+          10,000 user reviews of the TikTok application in Indonesian. The
+          pipeline covers complete text preprocessing (slang normalization,
+          stopword removal, and Sastrawi stemming), lexicon-based sentiment
+          labeling, exploratory data analysis via WordClouds and Treemaps,
+          TF-IDF feature extraction, and machine learning classification using
+          SVM, Random Forest, and Logistic Regression.
+        </p>
+      </section>
+
+      <!-- Problem Statement & Objective -->
+      <section class="project-section">
+        <h3>🎯 Problem Statement & Objective</h3>
+        <ul>
+          <li>
+            <strong>Challenge:</strong> Processing unscripted Indonesian user
+            reviews containing heavy slang, typos, and abbreviations to extract
+            actionable user satisfaction insights.
+          </li>
+          <li>
+            <strong>Solution:</strong> Constructed an NLP pipeline with custom
+            Indonesian slang mapping and Sastrawi stemming, followed by TF-IDF
+            vectorization to train multiple supervised models for automated
+            sentiment classification.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Key Performance Metrics -->
+      <section class="project-section">
+        <h3>📊 Model Performance & Sentiment Distribution</h3>
+        <table class="metrics-table">
+          <thead>
+            <tr>
+              <th>Model Classifier</th>
+              <th>Test Accuracy</th>
+              <th>Precision / Recall / F1-Score (Positive Class)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Support Vector Machine (SVM)</strong></td>
+              <td>90.80%</td>
+              <td>Precision: 0.96 | Recall: 0.93 | F1: 0.94</td>
+            </tr>
+            <tr>
+              <td><strong>Random Forest Classifier</strong></td>
+              <td>90.70%</td>
+              <td>Precision: 0.95 | Recall: 0.93 | F1: 0.94</td>
+            </tr>
+            <tr>
+              <td><strong>Logistic Regression</strong></td>
+              <td>90.40%</td>
+              <td>Precision: 0.94 | Recall: 0.94 | F1: 0.94</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size: 0.85rem; color: #64748b; margin-top: 10px">
+          <em
+            >Dataset Distribution (10,000 Total Reviews): Positive: 7,211
+            (72.1%) | Negative: 2,340 (23.4%) | Neutral: 449 (4.5%).</em
+          >
+        </p>
+      </section>
+
+      <!-- Key Strategic Insights -->
+      <section class="project-section">
+        <h3>💡 Key Technical & Business Insights</h3>
+        <ul>
+          <li>
+            <strong>High Model Reliability:</strong> All three models achieved
+            over 90% accuracy on the test set, with Support Vector Machine (SVM)
+            yielding the highest accuracy of 90.80%.
+          </li>
+          <li>
+            <strong>Slang & Stemming Impact:</strong> Normalizing regional slang
+            terms and applying Sastrawi Indonesian stemming significantly
+            reduced vocabulary noise before TF-IDF vectorization.
+          </li>
+          <li>
+            <strong>User Sentiment Highlights:</strong> Exploratory analysis
+            revealed top positive drivers around content creation and
+            entertainment ("bagus", "suka", "seru"), while negative feedback
+            focused on technical issues ("blokir", "update", "bug").
+          </li>
+        </ul>
+      </section>
+
+      <!-- System Architecture & Workflow (1 Baris) -->
+      <section class="project-section">
+        <h3>⚙️ Development Workflow</h3>
+        <div class="workflow-steps">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Text Preprocessing</h4>
+              <p>Cleaning, Slang Fix & Sastrawi Stemming</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Lexicon Labeling</h4>
+              <p>Positive/Negative Lexicon & EDA Visuals</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>TF-IDF Extraction</h4>
+              <p>200 Features Vectorization & Data Split</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4>Supervised Modeling</h4>
+              <p>SVM, Random Forest & LogReg Evaluation</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack & Skills -->
+      <section class="project-section">
+        <h3>🛠️ Tech Stack & Skills Highlighted</h3>
+
+        <div class="skills-group">
+          <span class="group-title">Natural Language Processing (NLP):</span>
+          <div class="tags-wrapper">
+            <span class="skill-badge">Indonesian NLP</span>
+            <span class="skill-badge">Sastrawi Stemmer</span>
+            <span class="skill-badge">NLTK</span>
+            <span class="skill-badge">Slang Word Normalization</span>
+            <span class="skill-badge">Lexicon-Based Labeling</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-title"
+            >Machine Learning & Feature Extraction:</span
+          >
+          <div class="tags-wrapper">
+            <span class="skill-badge">TF-IDF Vectorizer</span>
+            <span class="skill-badge">Support Vector Machine (SVM)</span>
+            <span class="skill-badge">Random Forest</span>
+            <span class="skill-badge">Logistic Regression</span>
+            <span class="skill-badge">Scikit-Learn</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-title">Visualization & Analysis:</span>
+          <div class="tags-wrapper">
+            <span class="skill-badge">WordCloud</span>
+            <span class="skill-badge">Squarify Treemap</span>
+            <span class="skill-badge">Matplotlib & Seaborn</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Links Direct Button (GitHub Only) -->
+      <section class="project-section project-links">
+        <h3>🔗 Project Resources</h3>
+        <div class="action-buttons">
+          <a
+            href="https://github.com/deayulianis/Analisis-Sentimen-Komentar-Apliksi-TikTok-Di-Google-Play"
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >💻 View GitHub Repository & Notebook →</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Dea Yuliani Sabrina | Built with 💙</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

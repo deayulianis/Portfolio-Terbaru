@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Halalergy: AI-Powered Food Label Analysis App | Dea Yuliani Sabrina
+    </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">Dea Yuliani Sabrina</h1>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#home">Back</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Case Study Content -->
+    <main class="container project-detail fade-in">
+      <!-- Header / Hero Section -->
+      <section class="project-hero">
+        <h2>📱 Halalergy: AI-Powered Food Label Analysis App</h2>
+        <p class="project-subtitle">
+          Android-Based Allergen & Halal Identification System (Undergraduate
+          Thesis)
+        </p>
+        <div class="hero-image-container">
+          <img
+            src="img/2.png"
+            alt="Halalergy App Preview"
+            class="detail-hero-img"
+          />
+        </div>
+      </section>
+
+      <!-- Overview -->
+      <section class="project-section">
+        <h3>Overview</h3>
+        <p>
+          Engineered an end-to-end AI-powered Android application that extracts
+          ingredient lists from packaged food photos using Tesseract OCR (LSTM),
+          processes text via NLP & RapidFuzz (Threshold ≥80), and matches terms
+          against a structured Knowledge Base in real time via a Flask REST API.
+        </p>
+      </section>
+
+      <!-- Problem Statement & Objective -->
+      <section class="project-section">
+        <h3>🎯 Problem Statement & Objective</h3>
+        <ul>
+          <li>
+            <strong>Challenge:</strong> Food packaging ingredients are often
+            lengthy, use complex chemical nomenclature, and exist only as
+            physical printed text, making quick identification of allergens and
+            halal status difficult.
+          </li>
+          <li>
+            <strong>Solution:</strong> Developed an automated processing
+            pipeline spanning image capture, OCR extraction, NLP normalization,
+            and fuzzy ingredient matching delivered through an intuitive Flutter
+            mobile application.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Key Technical Performance & Metrics -->
+      <section class="project-section">
+        <h3>📊 Key Technical Performance & Metrics</h3>
+        <table class="metrics-table">
+          <thead>
+            <tr>
+              <th>Metrics</th>
+              <th>Results / Specifications</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>OCR Evaluation Dataset</strong></td>
+              <td>50 Real-World Food Packaging Images</td>
+            </tr>
+            <tr>
+              <td><strong>Peak OCR Accuracy</strong></td>
+              <td>94.18% (Tesseract LSTM Engine)</td>
+            </tr>
+            <tr>
+              <td><strong>Fuzzy Matching Threshold</strong></td>
+              <td>≥80% Similarity (RapidFuzz extractOne)</td>
+            </tr>
+            <tr>
+              <td><strong>System Architecture</strong></td>
+              <td>RESTful API (Flask Backend + Flutter Mobile)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Key Technical Insights -->
+      <section class="project-section">
+        <h3>💡 Key Technical Insights (System Value)</h3>
+        <ul>
+          <li>
+            <strong>Hybrid Pipeline Strategy:</strong> Raw OCR alone is
+            insufficient for imperfect label photos. Combining OCR → NLP
+            Preprocessing (Cleaning/Tokenization) → RapidFuzz successfully
+            mitigates extraction noise and minor spelling variations.
+          </li>
+          <li>
+            <strong>Preprocessing Optimization:</strong> Introducing client-side
+            Crop & Rotate features significantly improved initial image quality
+            prior to OCR execution, directly enhancing text extraction
+            precision.
+          </li>
+          <li>
+            <strong>Scalable Knowledge Base:</strong> Decoupling the ingredient
+            matching engine from the allergen/halal metadata schema allows
+            seamless updates to the knowledge graph without modifying backend
+            logic.
+          </li>
+        </ul>
+      </section>
+
+      <!-- System Architecture & Workflow (1 Baris) -->
+      <section class="project-section">
+        <h3>⚙️️ System Architecture & Workflow</h3>
+        <div class="workflow-steps">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Flutter Android App</h4>
+              <p>Image Capture & Crop</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Flask REST API</h4>
+              <p>Tesseract OCR (LSTM)</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>NLP & RapidFuzz</h4>
+              <p>Fuzzy Matching (≥80%)</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4>Knowledge Base</h4>
+              <p>Render Result & History</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack & Skills -->
+      <section class="project-section">
+        <h3>🛠️ Tech Stack & Skills Highlighted</h3>
+
+        <div class="skills-group">
+          <span class="group-title">AI & NLP Pipeline:</span>
+          <div class="tags-wrapper">
+            <span class="skill-badge">Tesseract OCR (LSTM)</span>
+            <span class="skill-badge">RapidFuzz</span>
+            <span class="skill-badge">Text Cleaning & Normalization</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-title">Backend & API:</span>
+          <div class="tags-wrapper">
+            <span class="skill-badge">Python 3.10</span>
+            <span class="skill-badge">Flask REST API</span>
+            <span class="skill-badge">JSON Knowledge Base</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-title">Mobile Development:</span>
+          <div class="tags-wrapper">
+            <span class="skill-badge">Flutter</span>
+            <span class="skill-badge">Dart</span>
+            <span class="skill-badge">Image Manipulation (Crop/Rotate)</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-title">Core Capabilities:</span>
+          <div class="tags-wrapper">
+            <span class="skill-badge">System Architecture Design</span>
+            <span class="skill-badge">Computer Vision (OCR)</span>
+            <span class="skill-badge">Fuzzy Logic</span>
+            <span class="skill-badge">End-to-End System Integration</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Links Direct Buttons -->
+      <section class="project-section project-links">
+        <h3>🔗 Project Links</h3>
+        <div class="action-buttons">
+          <a
+            href="https://www.linkedin.com/feed/update/urn:li:activity:7514567981037727744/"
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >🎬 Watch Mobile Demo Video →</a
+          >
+          <a
+            href="https://github.com/deayulianis/halalergy-backend"
+            class="btn btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+            >💻 View GitHub Repository & API Code →</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Dea Yuliani Sabrina | Built with 💙</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

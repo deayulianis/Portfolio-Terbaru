@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intel Image Classification CNN | Dea Yuliani Sabrina</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">Dea Yuliani Sabrina</h1>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#home">Back</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Case Study Content -->
+    <main class="container project-detail fade-in">
+      <!-- Header / Hero Section -->
+      <section class="project-hero">
+        <h2>🖼️ Intel Image Classification CNN</h2>
+        <p class="project-subtitle">
+          Multi-Class Scene Classification & Deep Learning Model Deployment
+          (TF-Lite & TFJS)
+        </p>
+        <div class="hero-image-container">
+          <img
+            src="img/p6.png"
+            alt="Intel Image Classification Preview"
+            class="detail-hero-img"
+          />
+        </div>
+      </section>
+
+      <!-- Overview -->
+      <section class="project-section">
+        <h3>Overview</h3>
+        <p>
+          An end-to-end computer vision project leveraging a custom
+          Convolutional Neural Network (CNN) architecture to classify natural
+          scenery images into six distinct categories: buildings, forest,
+          glacier, mountain, sea, and street. The pipeline covers automated data
+          merging, train-val-test splitting, model training across 15 epochs,
+          comprehensive evaluation via confusion matrix, and multi-format model
+          conversion (TF-Lite and TensorFlow.js).
+        </p>
+      </section>
+
+      <!-- Problem Statement & Objective -->
+      <section class="project-section">
+        <h3>🎯 Problem Statement & Objective</h3>
+        <ul>
+          <li>
+            <strong>Challenge:</strong> Automatically and accurately
+            categorizing diverse natural and urban scenes from raw image data
+            requires robust feature extraction and spatial pattern recognition.
+          </li>
+          <li>
+            <strong>Solution:</strong> Built a 4-layer Conv2D and MaxPooling
+            pipeline combined with fully connected layers and Dropout
+            regularization, trained on 11,920 merged images, achieving high
+            performance and successful deployment packaging.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Key Performance Metrics -->
+      <section class="project-section">
+        <h3>📊 Model Performance & Evaluation Metrics</h3>
+        <table class="metrics-table">
+          <thead>
+            <tr>
+              <th>Evaluation Split</th>
+              <th>Accuracy Results</th>
+              <th>Loss / Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Training Set</strong></td>
+              <td>94.87%</td>
+              <td>Loss: 0.1539 (11,920 Images)</td>
+            </tr>
+            <tr>
+              <td><strong>Validation Set</strong></td>
+              <td>~84.37%</td>
+              <td>Loss: 0.5487 (2,552 Images)</td>
+            </tr>
+            <tr>
+              <td><strong>Test Set</strong></td>
+              <td>85.01%</td>
+              <td>Loss: 0.4134 (2,562 Images)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Key Strategic Insights -->
+      <section class="project-section">
+        <h3>💡 Key Technical Insights & Evaluation</h3>
+        <ul>
+          <li>
+            <strong>Class-Level Performance:</strong> The classification report
+            demonstrates stellar results in categories like *forest* (F1-score:
+            0.95) and *sea* (F1-score: 0.87), proving the CNN's strong
+            capability in capturing distinct textural and structural patterns.
+          </li>
+          <li>
+            <strong>Deployment Flexibility:</strong> Successfully converted the
+            trained TensorFlow model into SavedModel, TensorFlow Lite
+            (`.tflite`), and TensorFlow.js formats, enabling multi-platform
+            deployment readiness.
+          </li>
+          <li>
+            <strong>Submission Packaging:</strong> Automated the packaging
+            pipeline to bundle model artifacts, test label indices
+            (`label.txt`), requirements, and README into a clean zip archive.
+          </li>
+        </ul>
+      </section>
+
+      <!-- System Architecture & Workflow (1 Baris) -->
+      <section class="project-section">
+        <h3>⚙️ Development Workflow</h3>
+        <div class="workflow-steps">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Data Loading & Merge</h4>
+              <p>Kaggle API & Folder Merging</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Preprocessing & Split</h4>
+              <p>70% Train, 15% Val, 15% Test</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>CNN Model Training</h4>
+              <p>Conv2D, Pooling, Dropout (15 Epochs)</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4>Evaluation & Export</h4>
+              <p>Confusion Matrix & TF-Lite/TFJS Conversion</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack & Skills -->
+      <section class="project-section">
+        <h3>🛠️ Tech Stack & Skills Highlighted</h3>
+
+        <div class="skills-group">
+          <span class="group-title">Deep Learning & Frameworks:</span>
+          <div class="tags-wrapper">
+            <span class="skill-badge">TensorFlow / Keras</span>
+            <span class="skill-badge">Convolutional Neural Network (CNN)</span>
+            <span class="skill-badge">TF-Lite & TensorFlow.js</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-title">Image Processing & Evaluation:</span>
+          <div class="tags-wrapper">
+            <span class="skill-badge">OpenCV & Scikit-Image</span>
+            <span class="skill-badge">ImageDataGenerator (Augmentation)</span>
+            <span class="skill-badge"
+              >Confusion Matrix & Classification Report</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Links Direct Button (GitHub Only) -->
+      <section class="project-section project-links">
+        <h3>🔗 Project Resources</h3>
+        <div class="action-buttons">
+          <a
+            href="https://github.com/deayulianis/Proyek-Klasifikasi-Gambar"
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >💻 View GitHub Repository & Colab Notebook →</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Dea Yuliani Sabrina | Built with 💙</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

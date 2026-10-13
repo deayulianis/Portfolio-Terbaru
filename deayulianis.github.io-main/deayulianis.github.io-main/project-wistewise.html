@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WasteWise AI | Dea Yuliani Sabrina</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">Dea Yuliani Sabrina</h1>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#home">Back</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Case Study Content -->
+    <main class="container project-detail fade-in">
+      <!-- Header / Hero Section -->
+      <section class="project-hero">
+        <h2>🌱 WasteWise AI</h2>
+        <p class="project-subtitle">
+          CNN-Based Waste Classification for Smarter Waste Management (Coding
+          Camp powered by DBS Foundation 2025)
+        </p>
+        <div class="hero-image-container">
+          <img
+            src="img/3.png"
+            alt="WasteWise AI Preview"
+            class="detail-hero-img"
+          />
+        </div>
+      </section>
+
+      <!-- Overview -->
+      <section class="project-section">
+        <h3>Overview</h3>
+        <p>
+          WasteWise AI is a collaborative capstone project developed as part of
+          the Coding Camp powered by DBS Foundation 2025 program. The project
+          integrates Front-End, Back-End, and Machine Learning development to
+          help users identify waste categories from images using a CNN model
+          with MobileNetV2 architecture, classifying waste into 3 main
+          categories and 15 subcategories.
+        </p>
+      </section>
+
+      <!-- Problem Statement & Objective -->
+      <section class="project-section">
+        <h3>🎯 Problem Statement & Objective</h3>
+        <ul>
+          <li>
+            <strong>Challenge:</strong> Accurate waste identification is an
+            important step in sorting, but users often find it difficult to
+            determine the appropriate category of an item based solely on its
+            appearance.
+          </li>
+          <li>
+            <strong>Solution:</strong> Developed an end-to-end image
+            classification system recognizing 15 waste subcategories, integrated
+            into a collaborative web platform to support automated sorting.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Key Performance Metrics -->
+      <section class="project-section">
+        <h3>📊 Model Performance & Metrics</h3>
+        <table class="metrics-table">
+          <thead>
+            <tr>
+              <th>Evaluation Metric</th>
+              <th>Result Specifications</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Dataset Size</strong></td>
+              <td>
+                Approx. 7,182 Images (3 Main Categories, 15 Subcategories)
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Training Accuracy</strong></td>
+              <td>100%</td>
+            </tr>
+            <tr>
+              <td><strong>Validation Accuracy</strong></td>
+              <td>87.68%</td>
+            </tr>
+            <tr>
+              <td><strong>Average F1-score</strong></td>
+              <td>0.83</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Key Strategic Insights -->
+      <section class="project-section">
+        <h3>💡 Key Technical Insights</h3>
+        <ul>
+          <li>
+            <strong>MobileNetV2 Efficiency:</strong> Leveraging transfer
+            learning with MobileNetV2 enabled fast feature extraction and
+            efficient model deployment suitable for web integration.
+          </li>
+          <li>
+            <strong>Dataset Curation:</strong> Removing corrupted files and
+            balancing open-source image datasets (including Kaggle's Waste
+            Classification) successfully improved model stability across 15
+            subcategories.
+          </li>
+          <li>
+            <strong>Generalization Gap:</strong> The difference between training
+            accuracy (100%) and validation accuracy (87.68%) highlights the
+            importance of testing on unseen field data to prevent overfitting.
+          </li>
+        </ul>
+      </section>
+
+      <!-- System Architecture & Workflow (1 Baris) -->
+      <section class="project-section">
+        <h3>⚙️ Development Workflow</h3>
+        <div class="workflow-steps">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Data Preparation</h4>
+              <p>Dataset Collection & Cleaning (~7,182 Images)</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Preprocessing</h4>
+              <p>Resizing, Augmentation & Split</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>MobileNetV2 Training</h4>
+              <p>CNN Feature Extraction & Evaluation</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4>Web Integration</h4>
+              <p>Model Export (.h5) & Full-Stack Deployment</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack & Skills -->
+      <section class="project-section">
+        <h3>🛠️ Tech Stack & Skills Highlighted</h3>
+
+        <div class="skills-group">
+          <span class="group-title">Programming & Environment:</span>
+          <div class="tags-wrapper">
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">Google Colab</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-title">Data Processing & Vision:</span>
+          <div class="tags-wrapper">
+            <span class="skill-badge">Pandas & NumPy</span>
+            <span class="skill-badge">Image Resizing & Normalization</span>
+            <span class="skill-badge">Data Augmentation</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-title">Deep Learning Frameworks:</span>
+          <div class="tags-wrapper">
+            <span class="skill-badge">TensorFlow</span>
+            <span class="skill-badge">Keras</span>
+            <span class="skill-badge">MobileNetV2 (CNN)</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-title">Collaboration & Capabilities:</span>
+          <div class="tags-wrapper">
+            <span class="skill-badge">Cross-functional Teamwork</span>
+            <span class="skill-badge">Model Deployment (.h5)</span>
+            <span class="skill-badge">Image Classification</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Links Direct Buttons -->
+      <section class="project-section project-links">
+        <h3>🔗 Project Links</h3>
+        <div class="action-buttons">
+          <a
+            href="https://waste-classification-webapp.vercel.app/"
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >🌐 View Live Website →</a
+          >
+          <a
+            href="https://github.com/markusprap/waste-classification-webapp"
+            class="btn btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+            >💻 View GitHub Repository →</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Dea Yuliani Sabrina | Built with 💙</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
